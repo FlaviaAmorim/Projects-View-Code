@@ -9,9 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     var tableView: UITableView = UITableView()
-    let animals = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+    let animals = ["Camiseta", "Calça", "Shorts", "Chinelo", "Vestido"]
     let cellReuseIdentifier = "cell"
     let navBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 44))
     
@@ -23,11 +22,7 @@ class ViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         self.title = "Table View".uppercased()
         tableView.contentInset = UIEdgeInsets.zero
-        
-        //            navigationController?.title = "Table View"
         self.navigationItem.title = "Teste"
-        
-        
         self.view.addSubview(tableView)
         setupNavBar()
         setupTableView()
@@ -39,12 +34,10 @@ class ViewController: UIViewController {
 
         let navItem = UINavigationItem(title: "SomeTitle")
         navBar.setItems([navItem], animated: false)
-        
     }
     
     func setupTableView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        
         tableView.topAnchor.constraint(equalTo: navBar.bottomAnchor, constant: 0).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true

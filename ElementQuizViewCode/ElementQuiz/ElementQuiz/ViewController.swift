@@ -21,44 +21,6 @@ enum State {
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-//    @IBOutlet weak var imageView: UIImageView!
-//    @IBOutlet weak var labelAnswer: UILabel!
-//    @IBOutlet weak var modeSelector: UISegmentedControl!
-//    @IBOutlet weak var textField: UITextField!
-//    @IBOutlet weak var showAnswerButton: UIButton!
-//    @IBOutlet weak var nextButton: UIButton!
-    
-    
-//    @IBAction func showAnswer(_ sender: Any) {
-//        state = .answer
-//
-//        updateUI()
-//    }
-    
-//    @IBAction func next(_ sender: Any) {
-//        currentElementIndex += 1
-//
-//        if currentElementIndex >= elementList.count {
-//            currentElementIndex = 0
-//            if mode == .quiz {
-//                state = .score
-//                updateUI()
-//                return
-//            }
-//        }
-//
-//        state = .question
-//
-//        updateUI()
-//    }
-    
-//    @IBAction func switchModes(_ sender: Any) {
-//        if modeSelector.selectedSegmentIndex == 0 {
-//            mode = .flashCard
-//        } else {
-//            mode = .quiz
-//        }
-//    }
     @objc func showAnswer(_ sender: UIButton) {
         state = .answer
         
